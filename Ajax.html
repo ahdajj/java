@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+   <div id = 'comment'></div>
+   <form id = 'make'  action='https://jsonplaceholder.typicode.com/comments'>
+    <label>Write comment</label>
+    <input type="text" id = 'body'>
+    <input type="submit" value="submit">
+   </form>
+<body>
+    <script>
+          $.ajax({
+    method:'Get',
+    url: 'https://jsonplaceholder.typicode.com/comments',
+    dataType: 'json'
+   }).done(function(data){
+    $.map(data , function(comment,i){
+        if(i < 20){
+      $('#comment').append('<h3>'+comment.name+' '+ comment.id +  '</h3>' + '<p>' + comment.body + '</p>'  )}
+    })
+   });
+
+   $('#make').submit(function(e){
+    e.preventDefault();
+    var body = $('#body').val();
+    var url =  $(this).attr('action');
+    $.post(url, { body:body}).done(function(data){
+      console.log('post saved');
+      console.log(data)
+    })
+  })
+    </script>
+</body>
+</html>
