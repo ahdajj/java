@@ -1,0 +1,59 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 80%;
+    margin: 20px auto;
+    background: rgb(164, 158, 158);
+}
+#header {
+    font-family:cursive;
+    font-style:oblique;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+main h4{
+    text-align: center;
+    margin-top: 10px;
+}
+#cat{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    flex-flow: wrap row;
+}
+#cat button{
+    width: 30%;
+    height: 100px;
+    margin: 20px;
+}
+
+form {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+#In {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#output{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    flex-flow: wrap row;
+}
+#output div{
+    display: flex;
+    width: 40%;
+    margin: 20px;
+    justify-content: space-between;
+    flex-flow: wrap row;
+}
