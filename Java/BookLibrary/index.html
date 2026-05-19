@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Books Library</title>
+</head>
+<body>
+    <header id="header">
+        <h3>Welcome to the largest book library </h3>
+        <p>you can choose what you want to read from a various library of old and new books</p>
+    </header>
+    
+    <main>
+        <h4>Select your favourite category </h4>
+        <div id="cat">  
+          <button class="shown" >Novels</button>
+          <button class="shown">Stories</button>
+          <button class="shown">Short stories</button>
+          <button class="shown">Books</button>
+          <button class="hid" id="Education">Education</button>
+          <button class="hid" id="horror">horror</button>
+          <button class="hid" id="Romance">Romance</button>
+          <button class="hid" id="Fantasy">Fantasy</button>
+          <button class="hid" id="Fairy">Fairy tale</button>
+          <button class="hid" id="for Children">for Children</button>
+        </div>
+        
+        <div id="output"></div>
+        <br>
+        <form  >
+            <label>Search</label>
+            <input  id = 'In' type="search" placeholder="type what u want to search for" value="">
+            <input id = 'Su'  class="btn waves-effect waves-light" type="submit" value="search">
+        </form>
+    </main>
+
+<script src="javaScript.js"></script>
+</body>
+</html>

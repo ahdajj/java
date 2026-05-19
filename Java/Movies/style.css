@@ -1,0 +1,65 @@
+/* global props */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(./bk.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header{
+    padding: 15;
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+}
+
+form{
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
+}
+#search-input{
+    text-align: center;
+    width: 70%;
+}
+#search-btn{
+    width: 25%;
+}
+
+.result{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
+}
